@@ -21,10 +21,10 @@ export class GithubUserProfileComponent implements OnInit {
     this.getUsers();
   }
   getUser(userName:string){
-    console.log(userName.value);
-    if(userName.value != ""){
+    console.log(userName);
+    if(userName != ""){
       this.isSearch=true;
-      this.userService.getUser(userName.value).subscribe(x=>this.user=x);
+      this.userService.getUser(userName).subscribe(x=>this.user=x);
     }else{
       this.isSearch=false;
       this.getUsers();
