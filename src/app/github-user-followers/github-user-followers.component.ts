@@ -18,4 +18,8 @@ export class GithubUserFollowersComponent implements OnInit {
     console.log("calling viewfollwers method"+ this.userName);
     this.followers=this.userService.getFollowers(this.userName);    
   }
+  ngOnChanges(){
+    console.log(this.userName);
+    this.viewFollowers();
+  }
 }

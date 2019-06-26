@@ -23,7 +23,5 @@
 <div *ngIf="isSearch">
   <h3>{{ user.login | uppercase }}</h3>
   <img src="{{ user.avatar_url }}" width="100" height="100" />
-  <app-github-user-followers
-    userName="{{ user.login }}"
-  ></app-github-user-followers>
+  <app-github-user-followers userName="{{ user.login }}"></app-github-user-followers>
 </div>
