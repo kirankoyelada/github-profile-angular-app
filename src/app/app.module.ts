@@ -4,7 +4,6 @@ import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import {MatCardModule} from '@angular/material/card';
 import { GithubUserProfileComponent } from './github-user-profile/github-user-profile.component';
 import { GithubUserFollowersComponent } from './github-user-followers/github-user-followers.component';
 @NgModule({
@@ -15,9 +14,8 @@ import { GithubUserFollowersComponent } from './github-user-followers/github-use
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    MatCardModule,
-    FormsModule
+    HttpClientModule,    
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
