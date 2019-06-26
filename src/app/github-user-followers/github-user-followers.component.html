@@ -1,0 +1,8 @@
+<div>
+    <h2>Followers</h2>
+    <div *ngFor="let follow of followers | async">
+        <div style="float:left;display:inline-block;height:50px;"  [ngStyle]="{'width': 'calc(100% /' + followers.length + ')'}">
+          <img src='{{follow.avatar_url}}' width=50 height=50  hspace="2">
+        </div>        
+    </div>
+  </div><br>
