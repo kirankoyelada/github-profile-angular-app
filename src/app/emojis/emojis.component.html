@@ -1,0 +1,8 @@
+<div *ngFor="let item of emojis |keyvalue">
+    <div style="float:left;display:inline-block;height:50px;"  [ngStyle]="{'width': 'calc(100% /' + emojis.length + ')'}">
+      <div>
+          <strong>{{item.key}}</strong>==>
+          <img src='{{item.value}}'  width="50" height="50">
+      </div> 
+    </div> 
+</div>

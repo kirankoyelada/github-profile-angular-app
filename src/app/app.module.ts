@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubUserProfileComponent } from './github-user-profile/github-user-profile.component';
 import { GithubUserFollowersComponent } from './github-user-followers/github-user-followers.component';
+import { EmojisComponent } from './emojis/emojis.component';
 @NgModule({
   declarations: [
     AppComponent,
     GithubUserProfileComponent,
-    GithubUserFollowersComponent
+    GithubUserFollowersComponent,
+    EmojisComponent
   ],
   imports: [
     BrowserModule,
